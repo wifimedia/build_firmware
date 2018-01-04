@@ -86,24 +86,27 @@ function wr841v13_dev() {
 }
 
 function copy_ar7xx() {
-    now="$(date +'%d-%m-%Y')"
-	rm ./firmware/*
-	cp ../lede/bin/targets/ar71xx/generic/*.bin ../build_firmware/firmware/
-	cd ./firmware
-	for file in *.bin; do
-		new_name=`echo $file | sed 's/lede-ar71xx-generic/'$now'-stable/g'`
-		mv $file $new_name
-	done
+now="$(date +'%d-%m-%Y')"
+rm ./firmware/*
+cp ../lede/bin/targets/ar71xx/generic/*.bin ../build_firmware/firmware/
+cd ./firmware
+for file in *.bin; do
+	new_name=`echo $file | sed 's/lede-ar71xx-generic/'$now'-stable/g'`
+	echo $new_name
+	echo $file
+	mv $file  $new_name
+done
 }
 
 function copy_ramips() {
-    now="$(date +'%d-%m-%Y')"
-	rm ./firmware/*
-	cp ../lede/bin/targets/ramips/mt76x8/*.bin ../build_firmware/firmware/
-	cd ./firmware
-	for file in *.bin; do
-		new_name=`echo $file | sed 's/lede-ar71xx-generic/'$now'-stable/g'`
-		mv $file $new_name
-	done
+now="$(date +'%d-%m-%Y')"
+rm ./firmware/*
+cp ../lede/bin/targets/ramips/mt76x8/*.bin ../build_firmware/firmware/
+cd ./firmware
+for file in *.bin; do
+	new_name=`echo $file | sed 's/lede-ramips-mt76x8/'$now'-stable/g'`
+	echo $new_name
+	echo $file
+	mv $file  $new_name
+done
 }
-
