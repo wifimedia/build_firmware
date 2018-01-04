@@ -102,6 +102,7 @@ function copy_ramips() {
 now="$(date +'%d-%m-%Y')"
 rm ./firmware/*
 cp ../lede/bin/targets/ramips/mt76x8/*.bin ../build_firmware/firmware/
+sleep 5
 cd ./firmware
 for file in *.bin; do
 	new_name=`echo $file | sed 's/lede-ramips-mt76x8/'$now'-stable/g'`
