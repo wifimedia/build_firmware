@@ -7,7 +7,7 @@
 function wr940v5_stable() {
 	cd ./includes
 	cat ../config_build/feeds_wr940v5_80211r >../../lede/feeds.conf.default
-	cat ../config_build/config-wr940v5-stable > .config
+	cat ../config_build/config-wr940v5-stable >../../lede/.config
 	cd ../../lede
 	./scripts/feeds update -a
 	./scripts/feeds install -a
@@ -17,7 +17,7 @@ function wr940v5_stable() {
 function wr840v5_stable() {
 	cd ./includes
 	cat ../config_build/feeds_wr840v4 >../../lede/feeds.conf.default
-	cat ../config_build/config-wr840v5-stable > .config
+	cat ../config_build/config-wr840v5-stable >../../lede/.config
 	cd ../../lede
 	./scripts/feeds update -a
 	./scripts/feeds install -a
@@ -27,7 +27,7 @@ function wr840v5_stable() {
 function wr840v4_stable() {
 	cd ./includes
 	cat ../config_build/feeds_wr840v4 >../../lede/feeds.conf.default
-	cat ../config_build/config-wr840v4-stable > .config
+	cat ../config_build/config-wr840v4-stable >../../lede/.config
 	cd ../../lede
 	./scripts/feeds update -a
 	./scripts/feeds install -a
@@ -37,7 +37,7 @@ function wr840v4_stable() {
 function wr841v13_stable() {
 	cd ./includes
 	cat ../config_build/feeds_wr841v13 >../../lede/feeds.conf.default
-	cat ../config_build/config-wr841v13-stable > .config
+	cat ../config_build/config-wr841v13-stable >../../lede/.config
 	cd ../../lede
 	./scripts/feeds update -a
 	./scripts/feeds install -a
@@ -49,7 +49,7 @@ function wr841v13_stable() {
 function wr940v5_dev() {
 	cd ./includes
 	cat ../config_build/feeds_wr940v5_dev >../../lede/feeds.conf.default
-	cat ../config_build/config-wr940v5-dev > .config
+	cat ../config_build/config-wr940v5-dev >../../lede/.config
 	cd ../../lede
 	./scripts/feeds update -a
 	./scripts/feeds install -a
@@ -59,7 +59,7 @@ function wr940v5_dev() {
 function wr840v5_dev() {
 	cd ./includes
 	cat ../config_build/feeds_wr840v4 >../../lede/feeds.conf.default
-	cat ../config_build/config-wr840v5-dev > .config
+	cat ../config_build/config-wr840v5-dev >../../lede/.config
 	cd ../../lede
 	./scripts/feeds update -a
 	./scripts/feeds install -a
@@ -69,7 +69,7 @@ function wr840v5_dev() {
 function wr840v4_dev() {
 	cd ./includes
 	cat ../config_build/feeds_wr840v4 >../../lede/feeds.conf.default
-	cat ../config_build/config-wr840v4-dev > .config
+	cat ../config_build/config-wr840v4-dev >../../lede/.config
 	cd ../../lede
 	./scripts/feeds update -a
 	./scripts/feeds install -a
@@ -79,7 +79,7 @@ function wr840v4_dev() {
 function wr841v13_dev() {
 	cd ./includes
 	cat ../config_build/feeds_wr841v13 >../../lede/feeds.conf.default
-	cat ../config_build/config-wr841v13-dev > .config
+	cat ../config_build/config-wr841v13-dev >../../lede/.config
 	cd ../../lede
 	./scripts/feeds update -a
 	./scripts/feeds install -a
