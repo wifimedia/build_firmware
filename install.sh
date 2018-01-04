@@ -27,17 +27,17 @@ case "${menu_opt}" in
 	;;
 	2)	
 		wr840v4_dev
-		copy
+		copy_ramips
 		echo "Compile wifimedia firmware WR840v4 RC"
 	;;
 	3)
 		wr840v5_dev
-		copy
+		copy_ramips
 		echo "Compile wifimedia firmware WR840v5 RC"		
 	;;
 	4)
 		wr841v13_dev
-		copy
+		copy_ramips
 		echo "Compile wifimedia firmware WR841v13 RC"
 	;;
 	5)
@@ -47,17 +47,17 @@ case "${menu_opt}" in
 	;;
 	6)
 		wr840v4_stable
-		copy
+		copy_ramips
 		echo "Compile wifimedia firmware WR840v4 Stable"	
 	;;
 	7)
 		wr840v5_stable
-		copy
+		copy_ramips
 		echo "Compile wifimedia firmware WR840v5 Stable"	
 	;;
 	8)
 		wr841v13_stable
-		copy
+		copy_ramips
 		echo "Compile wifimedia firmware WR841v13 Stable"	
 	;;
 	9|q) 
