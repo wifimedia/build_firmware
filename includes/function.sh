@@ -48,7 +48,7 @@ function wr841v13_stable() {
 
 function wr940v5_dev() {
 	cd ./includes
-	cat ../config_build/feeds_wr940v5_80211r >../../lede/feeds.conf.default
+	cat ../config_build/feeds_wr940v5_dev >../../lede/feeds.conf.default
 	cat ../config_build/config-wr940v5-dev > .config
 	cd ../../lede
 	./scripts/feeds update -a
