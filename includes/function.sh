@@ -85,8 +85,8 @@ function wr841v13_dev() {
 	./scripts/feeds install -a
 }
 
-function copy() {
-    	now="$(date +'%d-%m-%Y')"
+function copy_ar7xx() {
+    now="$(date +'%d-%m-%Y')"
 	rm ./firmware/*
 	cp ../lede/bin/targets/ar71xx/generic/*.bin ../build_firmware/firmware/
 	cd ./firmware

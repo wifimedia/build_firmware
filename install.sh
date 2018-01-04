@@ -22,7 +22,7 @@ read menu_opt
 case "${menu_opt}" in
 	1)
 		wr940v5_dev
-		copy
+		copy_ar7xx
 		echo "Compile wifimedia firmware WR940v5 RC"
 	;;
 	2)	
@@ -42,7 +42,7 @@ case "${menu_opt}" in
 	;;
 	5)
 	  wr940v5_stable
-	  copy
+	  copy_ar7xx
 	   echo "Compile wifimedia firmware WR940v5 Stable"
 	;;
 	6)
