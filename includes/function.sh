@@ -83,6 +83,7 @@ function wr841v13_dev() {
 	cd ../../lede
 	./scripts/feeds update -a
 	./scripts/feeds install -a
+	make V=99
 }
 
 function wr940v3_stable() {
@@ -92,13 +93,14 @@ function wr940v3_stable() {
 	cd ../../lede
 	./scripts/feeds update -a
 	./scripts/feeds install -a
+	make V=99
 }
 
 function copy_ar7xx() {
 now="$(date +'%d-%m-%Y')"
-rm ./firmware/*
+rm firmware/*
 cp ../lede/bin/targets/ar71xx/generic/*.bin ../build_firmware/firmware/
-cd ./firmware
+cd firmware
 for file in *.bin; do
 	new_name=`echo $file | sed 's/lede-ar71xx-generic/'$now'-stable/g'`
 	echo $new_name
@@ -109,10 +111,10 @@ done
 
 function copy_ramips() {
 now="$(date +'%d-%m-%Y')"
-rm ./firmware/*
+rm firmware/*
 cp ../lede/bin/targets/ramips/mt76x8/*.bin ../build_firmware/firmware/
 sleep 5
-cd ./firmware
+cd firmware
 for file in *.bin; do
 	new_name=`echo $file | sed 's/lede-ramips-mt76x8/'$now'-stable/g'`
 	echo $new_name
