@@ -16,7 +16,8 @@ echo -e "5) WR940v5 "
 echo -e "6) WR840v4 "
 echo -e "7) WR840v5 "
 echo -e "8) WR841v13 "
-echo -e "9) Quit or q "
+echo -e "9) WR940v3"
+echo -e "10) Quit or q "
 echo -n "Select an option: "
 read menu_opt
 case "${menu_opt}" in
@@ -60,7 +61,12 @@ case "${menu_opt}" in
 		copy_ramips
 		echo "Compile wifimedia firmware WR841v13 Stable"	
 	;;
-	9|q) 
+	9) 
+	wr940v3_stable
+	copy_ar7xx
+	echo "Compile wifimedia firmware WR940v3 Stable"	
+	;;
+	10|q) 
 	exit 1
 	;;
 esac	
