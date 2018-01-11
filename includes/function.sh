@@ -68,7 +68,7 @@ function wr840v5_dev() {
 
 function wr840v4_dev() {
 	cd ./includes
-	cat ../config_build/feeds_wr840v4 >../../lede/feeds.conf.default
+	cat ../config_build/feeds_wr840v4_dev >../../lede/feeds.conf.default
 	cat ../config_build/config-wr840v4-dev >../../lede/.config
 	cd ../../lede
 	./scripts/feeds update -a
