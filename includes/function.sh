@@ -14,6 +14,16 @@ function wr940v5_stable() {
 	make V=99
 }
 
+function wr940v6_stable() {
+	cd ./includes
+	cat ../config_build/feeds_wr940v6_80211r >../../lede/feeds.conf.default
+	cat ../config_build/config-wr940v6-stable >../../lede/.config
+	cd ../../lede
+	./scripts/feeds update -a
+	./scripts/feeds install -a
+	make V=99
+}
+
 function wr840v5_stable() {
 	cd ./includes
 	cat ../config_build/feeds_wr840v4 >../../lede/feeds.conf.default
@@ -54,6 +64,16 @@ function wr940v5_dev() {
 	./scripts/feeds update -a
 	./scripts/feeds install -a
 	make V=99	
+}
+
+function wr940v6_dev() {
+	cd ./includes
+	cat ../config_build/feeds_wr940v6_80211r >../../lede/feeds.conf.default
+	cat ../config_build/config-wr940v6-dev >../../lede/.config
+	cd ../../lede
+	./scripts/feeds update -a
+	./scripts/feeds install -a
+	make V=99
 }
 
 function wr840v5_dev() {
