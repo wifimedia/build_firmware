@@ -7,8 +7,5 @@
 #src-git management https://github.com/openwrt-management/packages.git
 #src-git oldpackages http://git.openwrt.org/packages.git
 #src-link custom /usr/src/openwrt/custom-feed
-#src-git luci https://github.com/wifimedia/luci-17.git;gateway
-#src-git wifimedia https://github.com/wifimedia/lede_wifimedia.git;wr841v13
-#src-git wifimedia https://github.com/wifimedia/lede_wifimedia.git;wr840v4
-src-git wifimedia https://github.com/wifimedia/lede_wifimedia.git;wifimedia_dev
-src-git luci https://github.com/wifimedia/luci-17.git;802.11r_wr940v5
+src-git wifimedia https://github.com/wifimedia/lede_wifimedia.git;wifimedia_ex
+src-git luci https://github.com/wifimedia/luci-17.git;WRT
